@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.custom.CustomViewActivity">
+
+    <!--<com.forbitbd.customview.customView.MyImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+   <!-- <com.forbitbd.customview.customView.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+    <com.forbitbd.customview.customView.TableFanView
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/table_fan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table_fan"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ON"
+            android:id="@+id/toggle"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ON"
+        android:layout_above="@+id/bulb"
+        android:id="@+id/toggle_bulb"/>
+
+    <com.forbitbd.customview.customView.GradView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/bulb"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
